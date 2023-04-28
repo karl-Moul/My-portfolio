@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'open sans',sans-serif;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+}
+
+header .logo
+{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+header ul li.active a,
+header ul li:hover a
+{
+    color: #38fe6c;
+}
+#home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+#home .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+#home .content h2{
+   position: relative;
+   color: #38fe6c;
+   font-size: 5em;
+}
+#home .content p{
+    position: relative;
+    color: #fff;
+    font-size:1.2em;
+    line-height: 1.6em;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #38fe6c;
+    color: #222;
+    text-align: center;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#home img{
+    width: 400px;
+    height: 450px;
+    border-radius: 50%;
+    border: 5px solid #38fe38;
+}
+
+#services,
+#portfolio,
+#contact
+{
+   position: relative;
+   background: #34353a;
+   min-height: 100vh;
+   padding: 120px 100px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.secText{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.secText h2{
+    font-size:3em ;
+    color: #fff;
+}
+.secText p{
+    max-width: 700px;
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+#services .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.servicesBx{
+    background: #0b0b13;
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .40s;
+}
+.servicesBx i{
+    color: #38fe6c;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.servicesBx h3{
+    font-size:1.em; 
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+.servicesBx p{
+    font-size: 16px;
+    color: #fff;
+}
+.center{
+    text-align: center;
+}
+.servicesBx:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 30px 0px rgb(0 0 0 /70%);
+    border: 2px solid #38fe6c;
+}
+#portfolio{
+    background: #2e2f34;
+    text-align: center;
+}
+#portfolio .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio .content .imgbx{
+    position: relative;
+}
+#portfolio .content .imgBx img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+#contact .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+#contact .content a{
+    background: #2e2f34;
+    padding: 30px 50px;
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+}
+#contact .content a:hover{
+    background: #38fe38;
+}
+#contact .content a i{
+    color: #38fe38;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+#contact .content a:hover,
+#contact .content a:hover i{
+    color: #222;
+}
+.copyrights{
+    margin-top: 150px;
+    position: relative;
+    color: #aaa;
+    font-size: 1.1em;
+}
+
+@media (max-width:900px){
+    header{
+        padding: 20px 50px;
+    }
+    #home{
+        padding: 150px 50px;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    #home .content h2{
+        font-size: 4em;
+    }
+    .btn{
+        max-width: 160px;
+        padding: 10px 20px;
+    }
+    #home .men{
+        position: absolute;
+        height: 50vh;
+        right: 0;
+    }
+    .secText h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    #services,
+    #portfolio, 
+    #contact{
+        padding: 100px 50px;
+    }
+    #services .content{
+        grid-template-columns: repeat(2.1fr);
+    }
+}
+@media (max-width:700px){
+    #home .content h2{
+        font-size: 3em;
+    }
+    #home::before{
+        width: 80vw;
+        height: 40vw;
+        border-top-right-radius: 80vw;
+        border-top-left-radius: 80vw;
+    }
+    #home .men{
+        height: 40vh;
+    }
+    #services .content,
+    #portfolio .content,
+    #contact .content
+    {
+        grid-template-columns: repeat(1.1fr);
+    }
+}
